@@ -19,7 +19,7 @@
     <body>
         <!--ヘッダー部分-->
         <div class="header-big">
-
+     
             <div class="header-logo-big">
             <p><a href="index.html">RinatanArt</a></p>
             </div>
@@ -67,27 +67,21 @@
 
             <div class="art-pink">
                 <img id="pigra" src="MC2/pigra.png" alt="ピグら">
-
-                <!--
-                <div class="artdes">
-                </div>
-
-                <div class="good" id="good1">
-                    <button type="submit">Good</button>
-                </div>
-                -->
-
-            </div>
+                <div id="PigraGood">
+                    <input id="Pgb" class="gb" type="button" value="good" onclick="PigraGood()">
+                 </div>
             
+            </div>
         </div>
+      
 
         <!--メイン部分終了-->
 
-
-    <script></script>
-
-
-
+    <script>
+        function PigraGood(){
+            document.getElementById("Pgb").style.backgroundColor = 'palevioletred';
+        }      
+    </script>
 
     </body>
 
