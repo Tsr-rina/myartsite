@@ -1,36 +1,63 @@
-<!DOCTYPE html>
-
 <html lang="ja">
 
     <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="layout.css">
-    <title>pinkart</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="shortcut icon" href="MC2/favicon.png">
+        <title>pinkart</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z1XG02672"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3Z1XG02672');
+        </script>
     </head>
 
     <body>
-
         <!--ヘッダー部分-->
-        <div class="header">
+        <div class="header-big">
 
-            <div class="header-logo">
+            <div class="header-logo-big">
             <p><a href="index.html">RinatanArt</a></p>
             </div>
 
-            <div class="header-list">
+
+            <div class="header-list-big">
                 <ul>
-                    <li><a href="aboutsite.html">このサイトについて</a></li>
-                    <li><a href="guzzu.html">グッズ</a></li>
-                    <li><a href="other.html">その他</a></li>
+                <li><a href="aboutsite.html">このサイトについて</a></li>
+                <li><a href="guzzu.html">グッズ</a></li>
+                <li><a href="other.html">その他</a></li>
                 </ul>
             </div>
 
         </div>
-        <!--ヘッダー部分終了-->
+
+        <div class="header-small">
+
+            <div class="header-logo-small">
+            <p><a href="index.html">RinatanArt</a></p>
+            </div>
+
+
+            <div class="header-list-small">
+                <ul>
+                <li id="li-first"><a href="aboutsite.html">このサイトについて</a></li>
+                <li><a href="guzzu.html">グッズ</a></li>
+                <li><a href="other.html">その他</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!--ヘッダー終了-->
 
         <!--ヘッダー2つ目-->
-        <div class="header2">
-            <p>pink.</p>
+        <div class="header2" style="background-color: rgba(255,127,255,0.2); ">
+            <p style="color:#ffeaff; text-shadow: palevioletred 1px 0px 10px;">pink</p>
         </div>
         <!--ヘッダー2つ目終了-->
 
@@ -38,16 +65,10 @@
         <!--メイン部分-->
         <div class="art-main">
 
-            <div class="art">
-                <img src="MC2/pigra.png" alt="ピグら">
-                <div class="artdes">
-                <p>どこから来たのか…。</p>
-                <p>目が演算子になっているのと、体に模様をつけたところがポイント</p>
-                <p>紫色のネクタイを毎日身に付けている</p>
-                </div>
-
-                <div class="good" id="good1">
-                    <button type="submit">Good💕</button>
+            <div class="art-pink">
+                <img id="pigra" src="MC2/pigra.png" alt="ピグら">
+                <div id="PigraGood">
+                    <input id="Pgb" class="gb" type="button" value="good" onclick="PigraGood()">
                 </div>
 
             </div>
@@ -57,9 +78,11 @@
         <!--メイン部分終了-->
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="action.js"></script>
+    <script>
+        function PigraGood(){
+            document.getElementById("Pgb").style.backgroundColor = 'palevioletred';
+        }      
+    </script>
 
 
 

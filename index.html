@@ -1,107 +1,172 @@
 ﻿<html lang="ja">
 
     <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="layout.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="MC2/足.png">
-    <title>RinatanArt</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="shortcut icon" href="MC2/favicon.png">
+        <title>RinatanArt</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z1XG02672"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3Z1XG02672');
+        </script>
     </head>
 
     <body>
 
         <!--ヘッダー部分-->
-        <div class="header">
+        <div class="header-big">
 
-        <div class="header-logo">
-        <p><a href="index.html">RinatanArt</a></p>
-        </div>
-
-
-        <div class="header-list">
-            <ul>
-            <li><a href="aboutsite.html">このサイトについて</a></li>
-            <li><a href="guzzu.html">グッズ</a></li>
-            <li><a href="other.html">その他</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="intro">
-
-        <p>Welcome to RinatanArt.   I hope you will have a great time.</p>
-
-    </div>
-
-    <!--ヘッダー終了-->
-
-    <!--スライド部分-->
-    <div class="css-slider">
-        <div class="slider-wrapper">
-            <div class="slide-item">
-                <img src="MC2/homepageロゴ.png" alt=""    width=1000px height=600px>
+            <div class="header-logo-big">
+            <p><a href="index.html">RinatanArt</a></p>
             </div>
-            <div class="slide-item">
-                <img src="MC2/homepageロゴ2の1.png" alt="" width=1000px height=600px>
+
+
+            <div class="header-list-big">
+                <ul>
+                <li><a href="aboutsite.html">このサイトについて</a></li>
+                <li><a href="guzzu.html">グッズ</a></li>
+                <li><a href="other.html">その他</a></li>
+                </ul>
             </div>
-            <div class="slide-item">
-                <img src="MC2/homepageロゴ2の2.png" alt="" width=1000px height=600px>
+
+        </div>
+
+        <div class="header-small">
+
+            <div class="header-logo-small">
+            <p><a href="index.html">RinatanArt</a></p>
+            </div>
+
+
+            <div class="header-list-small">
+                <ul>
+                <li id="li-first"><a href="aboutsite.html">このサイトについて</a></li>
+                <li><a href="guzzu.html">グッズ</a></li>
+                <li><a href="other.html">その他</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="intro">
+            <p>Welcome to RinatanArt.   I hope you will have a great time.</p>
+        </div>
+
+        <!--ヘッダー終了-->
+
+        <!--スライド部分-->
+        <div id="slider-big" class="sliders">
+            <div class="slider-wrapper">
+                <div class="slide-item">
+                    <img src="MC2/homepageロゴ.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="MC2/homepageロゴ2の1.png" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="MC2/homepageロゴ2の2.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
 
-    <!--スライド部分終了-->
+        <!--スライド部分終了-->
 
-    <div class="main">
+        <!--画面幅小-->
 
-        <div class="color-search">
-            <p>color select</p>
+        <div id="slider-small">
+            <img src="MC2/homepageロゴ2の2.png" alt="">
         </div>
 
-        <div class="color-item">
-            <a href="redart.html"><img src="MC2/color-img-red.png" alt=""></a>
-            <p>red</p>
+
+        <!--画面幅小-->
+
+        <div class="main">
+
+            <!--
+            <div class="color-search">
+                <p>color select</p>
+            </div>
+            -->
+            <a href="redart.html">    
+                <div id="redticket" class="color-item">
+                    <p><span id="red">Red</span></p>
+                    <img src="MC2/color-img-red.png" alt="">
+                </div>
+            </a>
+
+            <a href="pinkart.html">
+                <div id="pinkticket" class="color-item">
+                    <p><span id="pink">pink</span></p>
+                    <img src="MC2/color-img-pink.png" alt="">
+                </div>
+            </a>
+
+            <a href="orangeart.html">
+                <div id="orangeticket" class="color-item">
+                    <p><span id="orange">orange</span></p>
+                    <img src="MC2/color-img-orange.png" alt="">
+                </div>
+            </a>
+
+            <a href="yellowart.html">
+                <div id="yellowticket" class="color-item">
+                    <p><span id="yellow">yellow</span></p>
+                    <img src="MC2/color-img-yellow.png" alt="">
+                </div>
+            </a>
+
+            <a href="greenart.html">
+                <div id="greenticket" class="color-item">
+                    <p><span id="green">green</span></p>
+                    <img src="MC2/color-img-green.png" alt="">
+                </div>
+            </a>
+
+            <a href="light-blueart.html">
+                <div id="light-blueticket" class="color-item">
+                    <p><span id="light-blue">light blue</span></p>
+                    <img src="MC2/color-img-lightblue.png" alt="">
+                </div>
+            </a>
+
+            <a href="blueart.html">
+                <div id="blueticket" class="color-item">
+                    <p><span id="blue">blue</span></p>
+                    <img src="MC2/color-img-blue.png" alt="">
+                </div>
+            </a>
+
+            <a href="purpleart.html">
+                <div id="purpleticket" class="color-item">
+                    <p><span id="purple">purple</span></p>
+                    <img src="MC2/color-img-purple.png" alt="">
+                </div>
+            </a>
+
+            <a href="cloth.html">
+                <div id="clothticket" class="color-item">
+                    <h5><span id="cloth">cloth</span></h5>
+                </div>
+            </a>
+
+
         </div>
 
-        <div class="color-item">
-            <a href="pinkart.html"><img src="MC2/color-img-pink.png" alt=""></a>
-            <p>pink</p>
+        <!--
+        <div id=footer>
+            <p>ここはエンディング</p>
         </div>
+        -->
 
-        <div class="color-item">
-            <a href="orangeart.html"><img src="MC2/color-img-orange.png" alt=""></a>
-            <p>orange</p>
-        </div>
 
-        <div class="color-item">
-            <a href="yellowart.html"><img src="MC2/color-img-yellow.png" alt=""></a>
-            <p>yellow</p>
-        </div>
-
-        <div class="color-item">
-            <a href="greenart.html"><img src="MC2/color-img-green.png" alt=""></a>
-            <p>green</p>
-        </div>
-
-        <div class="color-item">
-            <a href="light-blueart.html"><img src="MC2/color-img-lightblue.png" alt=""></a>
-            <p>light blue</p>
-        </div>
-
-        <div class="color-item">
-            <a href="blueart.html"><img src="MC2/color-img-blue.png" alt=""></a>
-            <p>blue</p>
-        </div>
-
-        <div class="color-item">
-            <a href="purpleart.html"><img src="MC2/color-img-purple.png" alt=""></a>
-            <p>purple</p>
-        </div>
-    </div>
-
-    <script src="action.js"></script>
 
     </body>
+
+    <script></script>
 
 </html>
