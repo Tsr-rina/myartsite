@@ -416,16 +416,27 @@
 	
 	/*greenの部分の1個目の電話のイラスト終了*/
 
-	/*guzzuのページ*/
-	#guzzu_main p{
-		text-align:center;
-		font-family:Comic Sans MS;
-		color:black;
-		font-size:30px;
-	}
 
-	/*guzzuのページ*/
+	/*guzzuのページ開始*/
+	.guzzu h4{
+		text-align:center;
+		color:#ff2893;
+	}
+	#guzz_look_btn{
+		border:solid 2px #ff2893;
+		border-radius: 5px;
+		color:#ff2893;	
+		box-shadow: 2px 2px 3px gray;
+		outline:none;	
+	}
+	#guzzu_page{
+		text-align: center;
+	}
+	#guzzu_page a{
+		color:#ff2893;
+	}
 	
+	/*guzzuのページ終了*/
 	
 	/*aboutesitaのページ*/
 	
@@ -439,8 +450,20 @@
 		color:black;
 		font-size:30px;
 	}
+	.art{
+		text-align:center;
+	}
+	.art h3{
+		color:#ff2893;
+	}
 	
 	/*aboutesiteのページ終了*/
+
+	/*other.htmlのページ開始*/
+	#other{
+		text-align: center;
+	}
+	/*other.htmlのページ終了*/	
 
 	/*footer部分開始*/
 	#footer{
