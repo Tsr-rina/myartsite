@@ -391,6 +391,10 @@
 		top:58%;
 		left:58%;
 	}
+	#pink_munyo{
+		height:350px;
+		width:350px;
+	}
 
 	/*pink.html終了*/
 	
@@ -413,8 +417,21 @@
 		height:350px;
 		width:500px;
 	}
+	#green_munyo{
+		height:350px;
+		width:350px;
+	}
 	
 	/*greenの部分の1個目の電話のイラスト終了*/
+
+	/*light-blue.htmlページ開始*/
+	#lightblue_munyo{
+		height:350px;
+		width:350px;		
+	}
+
+
+	/*light-blue.htmlページ終了*/
 
 
 	/*guzzuのページ開始*/
