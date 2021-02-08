@@ -369,6 +369,30 @@
 		outline:none;
 
 	}
+	.art-pink{
+		margin:5%;
+	}
+	.art-red{
+		margin:5%;
+	}
+	.art-orange{
+		margin:5%;
+	}
+	.art-yellow{
+		margin:5%;
+	}
+	.art-green{
+		margin:5%;
+	}
+	.art-lightblue{
+		margin:5%;
+	}
+	.art-blue{
+		margin:5%;
+	}
+	.art-purple{
+		margin:5%;
+	}
 	
 
 	#pigra{
@@ -618,6 +642,18 @@
 	#pigra{
 		height:350px;
 		width:350px;
+	}
+	#lightblue_munyo{
+		height:350px;
+		width:350px;		
+	}
+	#pink_munyo{
+		height:350px;
+		width:350px;		
+	}
+	#green_munyo{
+		height:350px;
+		width:350px;		
 	}
 
 	.art-cloth img{
