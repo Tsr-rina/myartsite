@@ -64,8 +64,7 @@
     <div class="art-main">
 
         <div class="art-red">
-            <h3>お絵描き中</h3>
-
+            <img src="MC2/flower_heart_swirl.png" alt="four_flower">
         </div>
         
     </div>
@@ -73,7 +72,21 @@
 
 
 
-<script></script>
+<script>
+    setInterval(function(){
+        document.oncontextmenu = function(){
+            return false;
+        }
+    },100) ; 
+
+    document.getElementsByTagName('html')[0].oncontextmenu = function(){
+        return false;
+    }
+    document.body.oncontextmenu = function(){
+        return false;
+    }
+    oncopy = "return false";
+</script>
 
 
 </body>

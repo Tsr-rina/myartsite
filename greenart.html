@@ -73,14 +73,11 @@
 
         <div class="art-green">
             <img  id="green-phone" src="MC2/Heyphone.png" alt="phone">
+            <img  id="green_reef" src="MC2/Green_reef.jpg" alt="happa">
         </div>
 
         <div class="art-green">
             <img  id="green_munyo" src="MC2/green_munyo.png" alt="gmunyo">
-        </div>
-
-        <div class="art-green">
-            <img  id="green_reef" src="MC2/Green_reef.jpg" alt="happa">
         </div>
 
 
@@ -93,7 +90,21 @@
 
 
 
-<script></script>
+<script>
+    setInterval(function(){
+        document.oncontextmenu = function(){
+            return false;
+        }
+    },100) ; 
+
+    document.getElementsByTagName('html')[0].oncontextmenu = function(){
+        return false;
+    }
+    document.body.oncontextmenu = function(){
+        return false;
+    }
+    oncopy = "return false";
+</script>
 
 </body>
 

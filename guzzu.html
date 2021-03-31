@@ -81,6 +81,19 @@
         function Guzzu_btn(){
             document.getElementById("guzzu_look_btn").style.backgroundColor = "#ffe5ff";
         }
+        setInterval(function(){
+            document.oncontextmenu = function(){
+                return false;
+            }
+        },100) ; 
+
+        document.getElementsByTagName('html')[0].oncontextmenu = function(){
+            return false;
+        }
+        document.body.oncontextmenu = function(){
+            return false;
+        }
+        oncopy = "return false";
 
     </script>
 

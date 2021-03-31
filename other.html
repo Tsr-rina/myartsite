@@ -65,18 +65,21 @@
 
         <!--main終了-->
 
+    <script>
+        setInterval(function(){
+            document.oncontextmenu = function(){
+                return false;
+            }
+        },100) ; 
 
-
-
-
-
-
-
-
-
-
-
-    <script></script>
+        document.getElementsByTagName('html')[0].oncontextmenu = function(){
+            return false;
+        }
+        document.body.oncontextmenu = function(){
+            return false;
+        }
+        oncopy = "return false";
+    </script>
 
     </body>
 

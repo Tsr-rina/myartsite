@@ -72,11 +72,12 @@
                     <input id="Pgb" class="gb" type="button" value="good" onclick="PigraGood()">
                 </div>
             -->
+                <img id="pink_munyo" src="MC2/pink_munyo.png" alt="pmunyo">
 
             </div>
 
             <div class="art-pink">
-                <img id="pink_munyo" src="MC2/pink_munyo.png" alt="pmunyo">
+                <img src="MC2/flower_heart_swirl.png" alt="four_flower">
             </div>
                 
         </div>
@@ -89,7 +90,20 @@
         function PigraGood(){
             document.getElementById("Pgb").style.backgroundColor = 'palevioletred';
         } 
-        */     
+        */
+        setInterval(function(){
+            document.oncontextmenu = function(){
+                return false;
+            }
+        },100) ; 
+
+        document.getElementsByTagName('html')[0].oncontextmenu = function(){
+            return false;
+        }
+        document.body.oncontextmenu = function(){
+            return false;
+        }
+        oncopy = "return false";   
     </script>
 
     </body>

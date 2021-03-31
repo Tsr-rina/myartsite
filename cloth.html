@@ -65,10 +65,11 @@
 
         <div class="art-cloth">
             <img src="MC2/green_long.jpg" alt="cloth_green">
+            <img src="MC2/green_yellow.jpg" alt="cloth_yellow">
         </div>
 
         <div class="art-cloth">
-            <img src="MC2/green_yellow.jpg" alt="cloth_yellow">
+            <img src="MC2/black_redflower.jpeg" alt="cloth_black_red">
         </div>
 
         <div class="art-cloth">
@@ -78,10 +79,21 @@
     </div>
 
 
+<script>
+    setInterval(function(){
+        document.oncontextmenu = function(){
+            return false;
+        }
+    },100) ; 
 
-
-
-<script></script>
+    document.getElementsByTagName('html')[0].oncontextmenu = function(){
+        return false;
+    }
+    document.body.oncontextmenu = function(){
+        return false;
+    }
+    oncopy = "return false";
+</script>
 
 
 </body>
