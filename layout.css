@@ -11,11 +11,11 @@ body{
 	/*background:linear-gradient(to right,#e8d1ff,#ffa8d3 35%,#ff9e9e 50%,#ffedab);*/
 	/*下から6つ目の色*/
 	/*background:linear-gradient(to right,#efe0ff,#887c82 35%,#ffe0e0 50%,#ffefe0);*/	
-
-	/*下から8つ目の色*/
+	
+  /*下から8つ目の色*/
 	/*background:linear-gradient(to right,#ead6ff,#ffd6ea 35%,#ffd6d6 50%,#ffead6);*/
-
-	/*下から10つ目の色*/
+	
+  /*下から10つ目の色*/
 	background:linear-gradient(to right,#e5ccff,#ffcce5 35%,#ffcccc 50%,#ffe5cc);
 }
 
@@ -73,7 +73,7 @@ body{
 
 /*イントロ部分*/
 .intro{
-	font-size:25px;
+	font-size:3vw;
 	color:#ff2893;
 	text-shadow: 3px 0 0 #f4eaff;
 	font-family:Comic Sans MS;
@@ -90,22 +90,16 @@ body{
 
 /*スライダー部分*/
 .sliders{
-	/*
-	border-top:solid 5px blue;
-	border-bottom:solid 5px blue;
-	*/
-	widows:100%;
-	height:650px;
+	height:60vw;
 	overflow:hidden;
-	/*padding-left:130px;*/
-	/*padding-right:90px;*/
 }
 .slider-wrapper{
-	width:300%;
+	width:300vw;
 	position:relative;
 	left:0;
 	will-change:transform;
 	animation:slider 10s infinite;
+	height:60vw;
 }
 .slide-item{
 	position:relative;
@@ -113,6 +107,11 @@ body{
 	float:left;
 	margin:0px;
 	align-items: center;
+	width: 100vw;
+}
+.slide-item img{
+	height:60vw;
+	width:100vw;
 }
 
 @keyframes slider{
@@ -120,14 +119,33 @@ body{
 		transform:translateX(0);
 	}
 	33%{
-		transform:translateX(-1000px);
+		transform:translateX(-700px);
 	}
 	66%{
-		transform:translateX(-2000px);
+		transform:translateX(-1000px);
 	}
 	100%{
 		transform:translateX(0);
 	}
+}
+@media screen and (max-width: 480px){
+	@keyframes slider{
+		0%{
+			transform:translateX(0);
+		}
+		33%{
+			transform:translateX(-300px);
+		}
+		66%{
+			transform:translateX(-700px);
+		}
+		100%{
+			transform:translateX(0);
+		}
+	}	
+}
+.slider-small{
+	display: none;
 }
 
 
@@ -229,12 +247,12 @@ body{
 	width:15vw;
 	float:left;
 }
-.color-item h5{
-	font-size:30px;
+#color-item-cloth-p{
+	font-size:4vw;
 	font-weight:bond;
 	font-family:Comic Sans MS;
 	/*border-right:5px solid yellow;*/
-	width:150px;
+	width:10vw;
 	float:left;
 	margin:0;
 	margin:40%;
@@ -275,8 +293,8 @@ body{
 	opacity:0.5;
 } */
 
-
 /*ペンキ画像部分終了*/
+
 
 
 /*color-item-ヘッダー部分*/
@@ -328,18 +346,37 @@ body{
 
 
 /*guzzuのページ開始*/
-.guzzu h4{
+.guzzu p{
 	text-align:center;
 	color:#ff2893;
+	font-size:2vw;
+}
+.comment_base{
+	text-align: center;
+	width: 60vw;
+	height: 30vw;
+	background-color:rgba(255, 255,255,0.3);
+	border: solid 5px rgba(255, 40,147, 0.0);
+	box-shadow:10px 10px 15px -10px;
+	border-radius:10px;
+	margin-left: 20vw;
+	margin-top:10vw;
+}
+#comment_base_first_p{
+	margin-top: 10%;
 }
 #guzz_look_btn{
+	height:5vw;
+	width: 20vw;
+	font-size: 1.5vw;
 	border:solid 2px #ff2893;
 	border-radius: 5px;
 	color:#ff2893;	
 	box-shadow: 2px 2px 3px gray;
 	outline:none;	
 }
-#guzzu_page{
+#guzzu_page_skip{
+	margin-top: 10%;
 	text-align: center;
 }
 #guzzu_page a{
@@ -358,22 +395,27 @@ body{
 	text-align:center;
 	font-family:Comic Sans MS;
 	color:black;
-	font-size:30px;
-}
-.art{
-	text-align:center;
-}
-.art h3{
+	font-size:2vw;
 	color:#ff2893;
 }
-
 /*aboutesiteのページ終了*/
 
 /*other.htmlのページ開始*/
-#other{
+.other{
 	text-align: center;
 }
-/*other.htmlのページ終了*/	
+/*comment_base in guzzu.html*/
+#other_comment_base_p{
+	color:#ff2893 ;
+	margin-top: 10%;
+	font-size:2vw;
+}
+.comment_base p{
+	color:#ff2893;
+	font-size:2vw;
+}
+/*other.htmlのページ終了*/
+
 
 /*footer部分開始*/
 #footer{
