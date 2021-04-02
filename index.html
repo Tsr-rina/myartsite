@@ -78,9 +78,9 @@
 
         <!--画面幅小-->
 
-        <div id="slider-small">
+        <!-- <div id="slider-small">
             <img src="MC2/homepageロゴ2の2.png" alt="">
-        </div>
+        </div> -->
 
 
         <!--画面幅小-->
@@ -167,6 +167,21 @@
 
     </body>
 
-    <script></script>
+    <script>
+        setInterval(function(){
+            document.oncontextmenu = function(){
+                return false;
+            }
+        },100) ; 
+
+        document.getElementsByTagName('html')[0].oncontextmenu = function(){
+            return false;
+        }
+        document.body.oncontextmenu = function(){
+            return false;
+        }
+        oncopy = "return false";
+        
+    </script>
 
 </html>

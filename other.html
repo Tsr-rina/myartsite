@@ -58,25 +58,30 @@
 
         <!--main-->
         <div id="other">
-
-            <h4>未定です</h4>
+            <div class="comment_base">
+                <p id="other_comment_base_p">作成中です</p>
+                <p>もうしばらくお待ちください</p>
+            </div>
         </div>
 
 
         <!--main終了-->
 
+    <script>
+        setInterval(function(){
+            document.oncontextmenu = function(){
+                return false;
+            }
+        },100) ; 
 
-
-
-
-
-
-
-
-
-
-
-    <script></script>
+        document.getElementsByTagName('html')[0].oncontextmenu = function(){
+            return false;
+        }
+        document.body.oncontextmenu = function(){
+            return false;
+        }
+        oncopy = "return false";
+    </script>
 
     </body>
 

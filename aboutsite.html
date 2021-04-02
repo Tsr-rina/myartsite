@@ -60,23 +60,34 @@
 
         <div class="art-main">
 
-            <div class="art">
-                <br>
-                <h3>このサイトでは自分で考えたキャラクターや服のデザインを載せています</h3>
-                <h3>描いたものを自分の思い出として残しています</h3>
+            <div class="about">
+                <div class="comment_base">
+                    <p>〜サイトについて〜</p>
+                    <p>自分で考えたキャラクターや服のデザインを載せています</p>
+                    <p>ゆっくりご覧ください〜</p>
+                </div>
+
+
             </div>
             
         </div>
 
 
+    <script>
+        setInterval(function(){
+            document.oncontextmenu = function(){
+                return false;
+            }
+        },100) ; 
 
-
-
-
-
-
-
-    <script></script>
+        document.getElementsByTagName('html')[0].oncontextmenu = function(){
+            return false;
+        }
+        document.body.oncontextmenu = function(){
+            return false;
+        }
+        oncopy = "return false";
+    </script>
 
     </body>
 
