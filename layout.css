@@ -5,15 +5,6 @@ a{
 }
 body{
 	margin:0px;
-	/*background-color:#ffdbff;*/
-	/*background:linear-gradient(to right,#e2c6ff,#ff89c4 35%,#ff8484 50%,);*/
-	/*2つ下*/
-	/*background:linear-gradient(to right,#e8d1ff,#ffa8d3 35%,#ff9e9e 50%,#ffedab);*/
-	/*下から6つ目の色*/
-	/*background:linear-gradient(to right,#efe0ff,#887c82 35%,#ffe0e0 50%,#ffefe0);*/	
-	
-  /*下から8つ目の色*/
-	/*background:linear-gradient(to right,#ead6ff,#ffd6ea 35%,#ffd6d6 50%,#ffead6);*/
 	
   /*下から10つ目の色*/
 	background:linear-gradient(to right,#e5ccff,#ffcce5 35%,#ffcccc 50%,#ffe5cc);
