@@ -151,6 +151,7 @@ body{
     text-align: center;
     color:#ff2893;
     font-size: 2vw;
+	font-family:Comic Sans MS;
 }
 /*news部分終了*/
 	
@@ -179,7 +180,7 @@ body{
 
 
 .main{
-	height: 1500px;
+	/* height: 1500px; */
 	width:100%;
 	background-color:none;
 	/* margin-right:10px;
@@ -421,8 +422,17 @@ body{
 
 /*footer部分開始*/
 #footer{
-	background-color: #f9f4ff;
-	height:500px;
+	/* background-color: #f9f4ff; */
+	height:auto;
+	/*下から10つ目の色*/
+	background:linear-gradient(to right,#e5ccff,#ffcce5 35%,#ffcccc 50%,#ffe5cc);
+}
+#footer-main{
+	background: rgba(255,255,255,0.3);
+	height: auto;
+	text-align: center;
+	color: #ff2893;
+	font-family:Comic Sans MS;
 }
 
 /*footer部分終了*/
